@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Form Example</title>
+</head>
+<body>
+<header>
+    <h1>Enhanced HTML5 Form</h1>
+    <p>This page demonstrates structured content, media integration, and a fully featured HTML5 form.</p>
+</header>
+
+<main>
+    <section>
+        <h2>Our Services</h2>
+        <ul>
+            <li>Web Development</li>
+            <li>UI/UX Design</li>
+            <li>Digital Marketing</li>
+            <li>Consulting</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Pricing Table</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Service</th>
+                    <th>Price</th>
+                    <th>Delivery Time</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Basic Website</td>
+                    <td>$300</td>
+                    <td>7 days</td>
+                </tr>
+                <tr>
+                    <td>E-commerce Site</td>
+                    <td>$800</td>
+                    <td>14 days</td>
+                </tr>
+                <tr>
+                    <td>SEO Optimization</td>
+                    <td>$150</td>
+                    <td>5 days</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>Gallery</h2>
+        <img src="https://images.pexels.com/photos/33029806/pexels-photo-33029806.jpeg" height="300" width="200"alt="Sample Project Image">
+        <video controls>
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <section>
+        <h2>Contact / Registration Form</h2>
+        <form action="#" method="post" autocomplete="on">
+            <div>
+                <label for="fullname">Full Name:</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter your name" required>
+            </div>
+
+            <div>
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" placeholder="example@email.com" required>
+            </div>
+
+            <div>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="+1234567890" pattern="[+0-9]{10,15}" required>
+            </div>
+
+            <div>
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+
+            <div>
+                <label for="service">Select Service:</label>
+                <select id="service" name="service" required>
+                    <option value="">-- Choose a Service --</option>
+                    <option value="web">Web Development</option>
+                    <option value="design">UI/UX Design</option>
+                    <option value="marketing">Digital Marketing</option>
+                    <option value="consulting">Consulting</option>
+                </select>
+            </div>
+
+            <div>
+                <label for="budget">Estimated Budget ($):</label>
+                <input type="number" id="budget" name="budget" min="100" max="5000" step="50" required>
+            </div>
+
+            <div>
+                <label for="comments">Additional Comments:</label>
+                <textarea id="comments" name="comments" rows="4" placeholder="Your message here..."></textarea>
+            </div>
+
+            <div>
+                <label>Preferred Contact Method:</label><br>
+                <input type="radio" id="contact-email" name="contact_method" value="email" required>
+                <label for="contact-email">Email</label>
+                <input type="radio" id="contact-phone" name="contact_method" value="phone">
+                <label for="contact-phone">Phone</label>
+            </div>
+
+            <div>
+                <label>
+                    <input type="checkbox" name="subscribe" checked>
+                    Subscribe to our newsletter
+                </label>
+            </div>
+
+            <div>
+                <label for="refcode">Referral Code:</label>
+                <input type="text" id="refcode" name="refcode" value="PROMO2025" readonly>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2025 Montie All rights reserved.</p>
+</footer>
+</body>
+</html>
